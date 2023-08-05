@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="popup.css" rel="stylesheet" type="text/css" />
+  <script type="module" src="popup.js"></script>
+  <title>Document</title>
+</head>
+<body >
+  <div id="mainCon" class="container" style="display:flex; justify-content: center;padding: 0px;">
+    <div style="margin: 0px; padding: 15px;" align = center>
+      <h4 id="pageStatus" style="margin-bottom: 20px;"></h4>
+      <h3 id="mode" style="margin: 10px 0;">FOCUS MODE</h3>
+      <p id="toggleHeading" align = left>Toggle the switch to disable</p>
+      <div style="display: flex;justify-content: center; align-items: center; margin: 15px 0;">
+        <p class="btnStatus" style="margin-right: 12px;">Disabled</p>
+        <label class="switch">
+          <input type="checkbox" id="checkBtn" checked>
+          <span class="slider round" disabled=True></span>
+        </label>
+        <p class="btnStatus" style="margin-left: 12px;">Enabled</p>
+      </div>
+      <p id="rangeHeading" align = left>Select the blur intensity</p>
+      <div style="display:flex; justify-content: center; margin-top: 15px;">
+        
+        <input type="range" id="myRange" min="1" max="10" value="5" id="myNumber">
+      </div>
+    </div>
+  </div>
+</body>
+</html>
